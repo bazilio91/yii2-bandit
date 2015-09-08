@@ -1,8 +1,11 @@
 Yii2 A/B testing tool
 ===================================
 
-This extension provides code to A/B test your views with [hard to beat](http://stevehanov.ca/blog/index.php?id=132)
- strategy.
+This extension provides code to A/B test your views.
+
+Supported strategies:
+ - [hard to beat](http://stevehanov.ca/blog/index.php?id=132)
+ - round robin
 
 Installation
 ------------

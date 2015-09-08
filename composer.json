@@ -6,7 +6,8 @@
     "yii2",
     "testing",
     "bandit",
-    "AB"
+    "AB",
+    "split testing"
   ],
   "license": "MIT",
   "authors": [
@@ -18,6 +19,11 @@
   "require": {
     "yiisoft/yii2": "*",
     "yiisoft/yii2-redis": "~2.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "4.6.*",
+    "yiisoft/yii2-codeception": "*",
+    "codeception/codeception": "2.0.*"
   },
   "autoload": {
     "psr-4": {
