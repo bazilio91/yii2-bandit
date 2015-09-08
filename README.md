@@ -1,6 +1,8 @@
 Yii2 A/B testing tool
 ===================================
 
+[![Build Status](https://travis-ci.org/bazilio91/yii2-bandit.svg?branch=master)](https://travis-ci.org/bazilio91/yii2-bandit)
+
 This extension provides code to A/B test your views.
 
 Supported strategies:

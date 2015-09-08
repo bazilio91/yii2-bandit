@@ -30,6 +30,7 @@ cache:
     - $HOME/.composer/cache
 
 install:
+  - travis_retry composer global require "fxp/composer-asset-plugin:~1.0.3"
   - travis_retry composer self-update && composer --version
   - export PATH="$HOME/.composer/vendor/bin:$PATH"
 # core framework:
