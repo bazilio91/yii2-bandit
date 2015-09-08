@@ -6,8 +6,7 @@
     "yii2",
     "testing",
     "bandit",
-    "AB",
-    "A/B"
+    "AB"
   ],
   "license": "MIT",
   "authors": [
@@ -17,11 +16,12 @@
     }
   ],
   "require": {
-    "yiisoft/yii2": "*"
+    "yiisoft/yii2": "*",
+    "yiisoft/yii2-redis": "~2.0"
   },
   "autoload": {
     "psr-4": {
-      "bazilio\\yii2\\bandit": ""
+      "bazilio\\yii2\\bandit\\": ""
     }
   }
 }
