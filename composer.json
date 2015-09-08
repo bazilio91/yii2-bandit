@@ -1,0 +1,27 @@
+{
+  "name": "bazilio/yii2-bandit",
+  "description": "Yii2 A/B testing tool",
+  "type": "yii2-extension",
+  "keywords": [
+    "yii2",
+    "testing",
+    "bandit",
+    "AB",
+    "A/B"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Vasily Ostanin",
+      "email": "bazilio91@gmail.com"
+    }
+  ],
+  "require": {
+    "yiisoft/yii2": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "bazilio\\yii2\\bandit": ""
+    }
+  }
+}
