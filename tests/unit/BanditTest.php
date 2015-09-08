@@ -1,6 +1,7 @@
 <?php
 namespace bazilio\yii2\bandit\tests\tests\unit;
 
+use bazilio\yii2\bandit\decisions\HardToBeatDecision;
 use bazilio\yii2\bandit\models\Test;
 use bazilio\yii2\bandit\models\TestCase;
 
@@ -108,11 +109,11 @@ class BanditTest extends \yii\codeception\TestCase
         /** @var TestCase $testCaseC */
         $testCaseC = TestCase::findOne(1);
 
-        $test->decision = \bazilio\yii2\bandit\decisions\HardToBeatDecision::class;
+        $test->decision = get_class(new HardToBeatDecision());
 
         for ($i = 9000; $i--;) {
             $testCase = $test->decide();
-            $successRate = $i < 7000 ? (7 - $testCase->id * 2) : $testCase->id * 2;
+            $successRate = $i < 8000 ? (7 - $testCase->id * 2) : $testCase->id * 2;
 
             $testCase->updateCounters([TestCase::COUNTER_REWARDS => (rand(1, 1000) < $successRate * 10 ? 1 : 0)]);
         }

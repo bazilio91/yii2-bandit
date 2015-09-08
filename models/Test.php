@@ -13,8 +13,8 @@ namespace bazilio\yii2\bandit\models;
 class Test extends BanditRecord
 {
     public static $decisions = [
-        \bazilio\yii2\bandit\decisions\HardToBeatDecision::class => 'Round robin',
-        \bazilio\yii2\bandit\decisions\RoundRobinDecision::class => 'Hard to beat',
+        '\bazilio\yii2\bandit\decisions\HardToBeatDecision' => 'Round robin',
+        '\bazilio\yii2\bandit\decisions\RoundRobinDecision' => 'Hard to beat',
     ];
 
     public function attributes()
