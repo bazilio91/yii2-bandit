@@ -1,4 +1,4 @@
-Yii2 A/B testing tool
+[WIP] Yii2 A/B testing tool
 ===================================
 
 [![Build Status](https://travis-ci.org/bazilio91/yii2-bandit.svg?branch=master)](https://travis-ci.org/bazilio91/yii2-bandit)
